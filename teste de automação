@@ -7,13 +7,9 @@ navegador = webdriver.Chrome()
 
 # Acessar o site
 navegador.get("https://docs.google.com/forms/d/146NvV-HqplkbI-NDAVgMvbK5r6C0kpk8nbRwoJvFvkE/edit ")
-sleep(2)
-
-botão_login = navegador.find_element(By.XPATH, '//*[@id="content"]/ul/li[9]/div[1]')
-botão_login.click()
 
 # Login
-espaço_login = navegador.find_element(By.XPATH,'//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input')
+espaço_login = navegador.find_element(By.CLASS_NAME,'whsOnd zHQkBf')
 espaço_login.send_keys('est.kropua')
 
 # Email
