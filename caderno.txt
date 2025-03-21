@@ -1,8 +1,0 @@
-Machine Learning Operation (MLOps) for Generative AI (https://www.cloudskillsboost.google/course_templates/927/video/511833)
-
-IA pretidiva = um tipo de inteligência artificial que tem o foco em performar tarefas especificas ou resolvendo problemas especificos. Ela não tem a habilidade de criar conteúdos novos ou gerar ideias originais. Em vez disso, depende de dados e algoritmos preexistentes para fazer previsões, classificações ou decisões. Tarefas como regressão, classificação, detecção de objetos ou previsão podem ser categorizadas como tarefas de IA pretidiva.
-
-IA generativa = um de IA que se concentra em criar novo e conteúdo original, como um texto, imagem ou som, por aprendizado de padrões em dados existentes.
-
-IA está relacionada junto com teoria e métodos para construir máquinas que pensando e atuam como humanos.
-
