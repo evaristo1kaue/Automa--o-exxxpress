@@ -4,13 +4,9 @@ import csv
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
-def perform_login(username, password):
+def perform_login():
     """
-    Realiza uma requisição de login para a API e retorna a resposta.
-
-    Args:
-        username (str): O nome de usuário para login.
-        password (str): A senha para login.
+    Realiza uma requisição de login para a API com credenciais fixas e retorna a resposta.
 
     Returns:
         dict or None: A resposta JSON da API se bem-sucedido, None caso contrário.
@@ -22,8 +18,8 @@ def perform_login(username, password):
     payload = {
         "id": 99,  # ID fixo para a requisição de login
         "params": {
-            "user": username,  # Nome de usuário fornecido
-            "password": password  # Senha fornecida
+            "user": "expressoadmin-celepar-qliksense",  # Nome de usuário fixo
+            "password": "Adad2066!@seuze2"  # Senha fixa
         }
     }
 
@@ -69,21 +65,19 @@ def create_user(user_data):
         print(f"Erro ao decodificar JSON: {e}")  # Imprime erro de decodificação JSON
         return None
 
-def create_users_from_csv(csv_filepath, username_login, password_login):
+def create_users_from_csv(csv_filepath):
     """
     Lê dados de um arquivo CSV e cria usuários na API.
 
     Args:
         csv_filepath (str): O caminho para o arquivo CSV.
-        username_login (str): O nome de usuário para o login inicial.
-        password_login (str): A senha para o login inicial.
     """
     try:
         with open(csv_filepath, 'r', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
             
             # Realiza o login uma única vez
-            login_response = perform_login(username_login, password_login)
+            login_response = perform_login()
             auth = None
 
             if login_response:
@@ -161,14 +155,12 @@ def browse_file():
 def run_script():
     """Executa o script com os dados fornecidos na interface."""
     csv_filepath = csv_filepath_entry.get()
-    username_login = username_entry.get()
-    password_login = password_entry.get()
 
-    if not csv_filepath or not username_login or not password_login:
-        messagebox.showerror("Erro", "Por favor, preencha todos os campos.")
+    if not csv_filepath:
+        messagebox.showerror("Erro", "Por favor, selecione o arquivo CSV.")
         return
 
-    create_users_from_csv(csv_filepath, username_login, password_login)
+    create_users_from_csv(csv_filepath)
 
 # Configuração da janela principal
 root = tk.Tk()
@@ -184,22 +176,8 @@ csv_filepath_entry.grid(row=0, column=1, padx=5, pady=5)
 browse_button = tk.Button(root, text="Procurar", command=browse_file)
 browse_button.grid(row=0, column=2, padx=5, pady=5)
 
-# Rótulo e entrada para o nome de usuário
-username_label = tk.Label(root, text="Usuário de Login:")
-username_label.grid(row=1, column=0, padx=5, pady=5, sticky="w")
-
-username_entry = tk.Entry(root, width=50)
-username_entry.grid(row=1, column=1, padx=5, pady=5)
-
-# Rótulo e entrada para a senha
-password_label = tk.Label(root, text="Senha de Login:")
-password_label.grid(row=2, column=0, padx=5, pady=5, sticky="w")
-
-password_entry = tk.Entry(root, show="*", width=50)
-password_entry.grid(row=2, column=1, padx=5, pady=5)
-
 # Botão para executar o script
 run_button = tk.Button(root, text="Executar", command=run_script)
-run_button.grid(row=3, column=0, columnspan=3, padx=5, pady=10)
+run_button.grid(row=1, column=0, columnspan=3, padx=5, pady=10)
 
 root.mainloop()
