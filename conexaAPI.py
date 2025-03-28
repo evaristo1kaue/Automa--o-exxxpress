@@ -24,14 +24,17 @@ def perform_login():
     }
 
     try:
+        print("\nTentando realizar o login...")  # Log
         response = requests.post(url, headers=headers, data=json.dumps(payload))  # Envia a requisição POST
         response.raise_for_status()  # Lança uma exceção HTTPError para respostas ruins (4xx ou 5xx)
+        print("Resposta da API de Login (bruta):")  # Log
+        print(response.text)  # Log - Imprime a resposta completa
         return response.json()  # Retorna a resposta JSON
     except requests.exceptions.RequestException as e:
-        print(f"Erro durante a requisição: {e}")  # Imprime erro de requisição
+        print(f"Erro durante a requisição de login: {e}")  # Imprime erro de requisição
         return None
     except json.JSONDecodeError as e:
-        print(f"Erro ao decodificar JSON: {e}")  # Imprime erro de decodificação JSON
+        print(f"Erro ao decodificar JSON de login: {e}")  # Imprime erro de decodificação JSON
         return None
 
 def create_user(user_data):
@@ -55,14 +58,56 @@ def create_user(user_data):
     }
 
     try:
+        print(f"\nTentando criar o usuário: {user_data['accountLogin']}...")  # Log
         response = requests.post(url, headers=headers, data=json.dumps(payload))  # Envia a requisição POST
         response.raise_for_status()  # Lança uma exceção HTTPError para respostas ruins (4xx ou 5xx)
+        print(f"Resposta da API de criação de usuário (bruta) para {user_data['accountLogin']}:")  # Log
+        print(response.text)  # Log - Imprime a resposta completa
         return response.json()  # Retorna a resposta JSON
     except requests.exceptions.RequestException as e:
-        print(f"Erro durante a requisição: {e}")  # Imprime erro de requisição
+        print(f"Erro durante a requisição de criação de usuário: {e}")  # Imprime erro de requisição
         return None
     except json.JSONDecodeError as e:
-        print(f"Erro ao decodificar JSON: {e}")  # Imprime erro de decodificação JSON
+        print(f"Erro ao decodificar JSON de criação de usuário: {e}")  # Imprime erro de decodificação JSON
+        return None
+
+def add_user_to_group(auth_token, user_ids, group_names):
+    """
+    Adiciona um usuário a um grupo através de uma requisição POST para o endpoint /celepar/Admin/AddUserToGroup.
+
+    Args:
+        auth_token (str): O token de autenticação.
+        user_ids (str): O ID ou IDs de usuário(s) a serem adicionados ao grupo (pode ser string única ou multiplas separadas por virgula).
+        group_names (str): O nome ou nomes do grupo(s) ao(s) qual(is) o(s) usuário(s) será(ão) adicionado(s) (pode ser string única ou multiplas separadas por virgula).
+
+    Returns:
+        dict or None: A resposta JSON da API se bem-sucedido, None caso contrário.
+    """
+    url = "https://api-slim.expresso.pr.gov.br/celepar/Admin/AddUserToGroup"  # URL do endpoint
+    headers = {
+        "Content-Type": "application/json"  # Define o tipo de conteúdo como JSON
+    }
+    payload = {
+        "id": 93,  # ID fixo para a requisição
+        "params": {
+            "auth": auth_token,
+            "uids": user_ids,
+            "cns": group_names
+        }
+    }
+
+    try:
+        print(f"\nTentando adicionar o usuário {user_ids} ao grupo {group_names}...")  # Log
+        response = requests.post(url, headers=headers, data=json.dumps(payload))  # Envia a requisição POST
+        response.raise_for_status()  # Lança uma exceção HTTPError para respostas ruins (4xx ou 5xx)
+        print(f"Resposta da API de adicionar ao grupo (bruta) para {user_ids}:")  # Log
+        print(response.text)  # Log - Imprime a resposta completa
+        return response.json()  # Retorna a resposta JSON
+    except requests.exceptions.RequestException as e:
+        print(f"Erro durante a requisição de adicionar ao grupo: {e}")  # Imprime erro de requisição
+        return None
+    except json.JSONDecodeError as e:
+        print(f"Erro ao decodificar JSON de adicionar ao grupo: {e}")  # Imprime erro de decodificação JSON
         return None
 
 def create_users_from_csv(csv_filepath):
@@ -81,7 +126,7 @@ def create_users_from_csv(csv_filepath):
             auth = None
 
             if login_response:
-                print("Resposta da API de Login:")
+                print("\nResposta da API de Login (JSON):")
                 print(json.dumps(login_response, indent=2, ensure_ascii=False))
 
                 # Lógica de diagnóstico para encontrar o 'auth'
@@ -117,6 +162,11 @@ def create_users_from_csv(csv_filepath):
                     print(f"Erro: Dados incompletos na linha: {row}. Pulando para a próxima linha.")
                     messagebox.showwarning("Aviso", f"Dados incompletos na linha: {row}. Pulando para a próxima linha.")
                     continue
+                
+                if not auth:
+                    print("Erro: O token 'auth' está vazio ou não foi encontrado. Não é possível criar o usuário.")
+                    messagebox.showerror("Erro", "O token 'auth' está vazio ou não foi encontrado. Não é possível criar o usuário.")
+                    return
 
                 user_info = {
                     "auth": auth,
@@ -134,6 +184,20 @@ def create_users_from_csv(csv_filepath):
                     print("Resposta da API (Criar Usuário):")
                     print(json.dumps(api_response_create_user, indent=2, ensure_ascii=False))
                     messagebox.showinfo("Sucesso", f"Usuário {login} criado com sucesso.")
+                    
+                    # Adiciona o usuário aos grupos após a criação bem-sucedida
+                    groups_to_add = ["grupo-qliksense-active_directory", "grupo-qliksense-default"]
+                    for group in groups_to_add:
+                        # Corrected line: Pass the 'auth' token to the function
+                        api_response_add_to_group = add_user_to_group(auth, login, group)
+                        if api_response_add_to_group:
+                            print(f"Usuário {login} adicionado ao grupo {group}.")
+                            print("Resposta da API (Adicionar ao Grupo):")
+                            print(json.dumps(api_response_add_to_group, indent=2, ensure_ascii=False))
+                            messagebox.showinfo("Sucesso", f"Usuário {login} adicionado ao grupo {group}.")
+                        else:
+                            print(f"Falha ao adicionar usuário {login} ao grupo {group}.")
+                            messagebox.showerror("Erro", f"Falha ao adicionar usuário {login} ao grupo {group}.")
                 else:
                     print(f"\nFalha ao criar usuário {login}.")
                     messagebox.showerror("Erro", f"Falha ao criar usuário {login}.")
@@ -164,7 +228,7 @@ def run_script():
 
 # Configuração da janela principal
 root = tk.Tk()
-root.title("Criar Usuários a partir de CSV")
+root.title("Criar Usuários e Adicionar a Grupos a partir de CSV")
 
 # Rótulo e entrada para o caminho do arquivo CSV
 csv_filepath_label = tk.Label(root, text="Caminho do Arquivo CSV:")
