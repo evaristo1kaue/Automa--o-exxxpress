@@ -3,6 +3,9 @@ import json
 import csv
 import tkinter as tk
 from tkinter import filedialog, messagebox
+import random
+import string
+import os
 
 def perform_login():
     """
@@ -43,7 +46,7 @@ def create_user(user_data):
 
     Args:
         user_data (dict): Um dicionário contendo as informações do usuário
-                          (auth, accountLogin, accountEmail, accountName, accountProfile, accountPassword).
+                          (auth, accountLogin, accountName, accountProfile, accountPassword).
 
     Returns:
         dict or None: A resposta JSON da API se bem-sucedido, None caso contrário.
@@ -110,13 +113,20 @@ def add_user_to_group(auth_token, user_ids, group_names):
         print(f"Erro ao decodificar JSON de adicionar ao grupo: {e}")  # Imprime erro de decodificação JSON
         return None
 
+def generate_random_password(length=5):
+    """Gera uma senha aleatória de um determinado comprimento."""
+    characters = string.ascii_letters + string.digits  # Letras maiúsculas, minúsculas e dígitos
+    return ''.join(random.choice(characters) for i in range(length))
+
 def create_users_from_csv(csv_filepath):
     """
-    Lê dados de um arquivo CSV e cria usuários na API.
+    Lê dados de um arquivo CSV, cria usuários na API e gera um arquivo CSV com login e senha.
 
     Args:
         csv_filepath (str): O caminho para o arquivo CSV.
     """
+    user_credentials = []  # Lista para armazenar login e senha de cada usuário
+
     try:
         with open(csv_filepath, 'r', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
@@ -153,12 +163,15 @@ def create_users_from_csv(csv_filepath):
             # Itera sobre as linhas do CSV e cria os usuários
             for row in reader:
                 login = row.get('login')
-                email = row.get('e-mail')
                 name = row.get('name')
-                profile = row.get('profile')
-                password = row.get('password')
+                profile = "qliksense" #adicionado para sempre ser qliksense
+                password = generate_random_password() # Gera uma senha aleatória de 5 caracteres
 
-                if not all([login, email, name, profile, password]):
+                # Adiciona o domínio @nodomain.com ao email
+                if login and "@" not in login:
+                    login = f"{login}@nodomain.com"
+
+                if not all([login, name, profile, password]):
                     print(f"Erro: Dados incompletos na linha: {row}. Pulando para a próxima linha.")
                     messagebox.showwarning("Aviso", f"Dados incompletos na linha: {row}. Pulando para a próxima linha.")
                     continue
@@ -171,7 +184,6 @@ def create_users_from_csv(csv_filepath):
                 user_info = {
                     "auth": auth,
                     "accountLogin": login,
-                    "accountEmail": email,
                     "accountName": name,
                     "accountProfile": profile,
                     "accountPassword": password
@@ -180,15 +192,14 @@ def create_users_from_csv(csv_filepath):
                 api_response_create_user = create_user(user_info)
 
                 if api_response_create_user:
-                    print(f"\nUsuário {login} criado com sucesso.")
+                    print(f"\nUsuário {login} criado com sucesso com a senha: {password}.") #mostra a senha gerada
                     print("Resposta da API (Criar Usuário):")
                     print(json.dumps(api_response_create_user, indent=2, ensure_ascii=False))
-                    messagebox.showinfo("Sucesso", f"Usuário {login} criado com sucesso.")
+                    messagebox.showinfo("Sucesso", f"Usuário {login} criado com sucesso com a senha: {password}.") #mostra a senha gerada
                     
                     # Adiciona o usuário aos grupos após a criação bem-sucedida
                     groups_to_add = ["grupo-qliksense-active_directory", "grupo-qliksense-default"]
                     for group in groups_to_add:
-                        # Corrected line: Pass the 'auth' token to the function
                         api_response_add_to_group = add_user_to_group(auth, login, group)
                         if api_response_add_to_group:
                             print(f"Usuário {login} adicionado ao grupo {group}.")
@@ -198,9 +209,23 @@ def create_users_from_csv(csv_filepath):
                         else:
                             print(f"Falha ao adicionar usuário {login} ao grupo {group}.")
                             messagebox.showerror("Erro", f"Falha ao adicionar usuário {login} ao grupo {group}.")
+                    
+                    user_credentials.append({"login": login, "password": password}) #adiciona o login e senha na lista
                 else:
                     print(f"\nFalha ao criar usuário {login}.")
                     messagebox.showerror("Erro", f"Falha ao criar usuário {login}.")
+        
+        # Gera o arquivo CSV com as credenciais
+        if user_credentials:
+            output_filename = "user_credentials.csv"
+            output_filepath = os.path.join(os.path.dirname(csv_filepath), output_filename)
+            with open(output_filepath, 'w', newline='', encoding='utf-8') as output_csvfile:
+                fieldnames = ["login", "password"]
+                writer = csv.DictWriter(output_csvfile, fieldnames=fieldnames)
+                writer.writeheader()
+                writer.writerows(user_credentials)
+            print(f"\nArquivo CSV com credenciais gerado em: {output_filepath}")
+            messagebox.showinfo("Sucesso", f"Arquivo CSV com credenciais gerado em: {output_filepath}")
 
     except FileNotFoundError:
         print(f"Erro: Arquivo CSV não encontrado em {csv_filepath}")
