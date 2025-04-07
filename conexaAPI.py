@@ -21,8 +21,8 @@ def perform_login():
     payload = {
         "id": 99,  # ID fixo para a requisição de login
         "params": {
-            "user": "*",  # Nome de usuário fixo
-            "password": "*"  # Senha fixa
+            "user": "expressoadmin-celepar-qliksense",  # Nome de usuário fixo
+            "password": "Adad2066!@seuze2"  # Senha fixa
         }
     }
 
@@ -270,3 +270,4 @@ run_button = tk.Button(root, text="Executar", command=run_script)
 run_button.grid(row=1, column=0, columnspan=3, padx=5, pady=10)
 
 root.mainloop()
+
