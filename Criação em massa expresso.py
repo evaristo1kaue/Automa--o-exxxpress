@@ -270,4 +270,3 @@ run_button = tk.Button(root, text="Executar", command=run_script)
 run_button.grid(row=1, column=0, columnspan=3, padx=5, pady=10)
 
 root.mainloop()
-
