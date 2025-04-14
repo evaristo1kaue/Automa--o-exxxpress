@@ -83,39 +83,9 @@ def execute_query(conn, query, data=None):
         print("Não há conexão com o banco de dados.")
         return False
 
-def get_orgao_id(conn, orgao_nome):
-    """
-    Obtém o ID do órgão com base no nome do órgão.
-
-    Args:
-        conn: Objeto de conexão com o banco de dados.
-        orgao_nome (str): O nome do órgão.
-
-    Returns:
-        int or None: O ID do órgão se encontrado, None caso contrário.
-    """
-    query = "SELECT id FROM tb_orgao WHERE nome = %s;"
-    try:
-        cursor = conn.cursor()
-        cursor.execute(query, (orgao_nome,))
-        result = cursor.fetchone()
-        if result:
-            return result[0]
-        else:
-            print(f"Órgão '{orgao_nome}' não encontrado na tabela tb_orgao.")
-            messagebox.showwarning("Aviso", f"Órgão '{orgao_nome}' não encontrado na tabela tb_orgao.")
-            return None
-    except Error as e:
-        print(f"Erro ao buscar o ID do órgão: {e}")
-        messagebox.showerror("Erro", f"Erro ao buscar o ID do órgão: {e}")
-        return None
-    finally:
-        if 'cursor' in locals():
-            cursor.close()
-
 def insert_key(conn, nome, orgao_nome, chave_politica):
     """
-    Insere uma nova chave na tabela tb_chave com valores padrão, buscando o ID do órgão.
+    Insere uma nova chave na tabela indicadores.tb_chave com valores padrão.
 
     Args:
         conn: Objeto de conexão com o banco de dados.
@@ -126,21 +96,17 @@ def insert_key(conn, nome, orgao_nome, chave_politica):
     Returns:
         bool: True se a inserção foi bem-sucedida, False caso contrário.
     """
-    orgao_id = get_orgao_id(conn, orgao_nome)
-    if orgao_id is None:
-        return False
-
     query = """
-        INSERT INTO tb_chave(nome, situacao, orgao, dt_criacao, dt_desativada, excluido, 
-        chave_politica, cod_orgao)
-        VALUES (%s, 'Ativa', %s, Now(), null, 'N', %s, %s);
+        INSERT INTO indicadores.tb_chave(nome, situacao, orgao, dt_criacao, dt_desativada, 
+        excluido, chave_politica, cod_orgao)
+        VALUES (%s, 'Ativa', %s, Now(), null, 'N', %s, null);
     """
-    data = (nome, orgao_nome, chave_politica, orgao_id)
+    data = (nome, orgao_nome, chave_politica)
     return execute_query(conn, query, data)
 
 def insert_keys_from_csv(conn, csv_filepath):
     """
-    Lê dados de um arquivo CSV e insere chaves na tabela tb_chave.
+    Lê dados de um arquivo CSV e insere chaves na tabela indicadores.tb_chave.
 
     Args:
         conn: Objeto de conexão com o banco de dados.
@@ -159,6 +125,11 @@ def insert_keys_from_csv(conn, csv_filepath):
                     messagebox.showwarning("Aviso", f"Dados incompletos na linha: {row}. Pulando para a próxima linha.")
                     continue
 
+                if chave_politica not in ('S', 'N'):
+                    print(f"Erro: Valor inválido para 'chave_politica' na linha: {row}. Deve ser 'S' ou 'N'. Pulando para a próxima linha.")
+                    messagebox.showwarning("Aviso", f"Valor inválido para 'chave_politica' na linha: {row}. Deve ser 'S' ou 'N'. Pulando para a próxima linha.")
+                    continue
+
                 if insert_key(conn, nome, orgao_nome, chave_politica):
                     print(f"Chave '{nome}' inserida com sucesso.")
                     messagebox.showinfo("Sucesso", f"Chave '{nome}' inserida com sucesso.")
@@ -174,7 +145,14 @@ def insert_keys_from_csv(conn, csv_filepath):
         messagebox.showerror("Erro", f"Erro inesperado: {e}")
 
 def browse_file():
-    """Abre uma janela para selecionar o arquivo CSV."""
+    """Abre uma janela para selecionar o arquivo CSV e exibe uma mensagem com o formato das colunas."""
+    messagebox.showinfo(
+        "Formato do Arquivo CSV",
+        "O arquivo CSV deve conter as seguintes colunas:\n\n"
+        "nome: Nome da chave (texto).\n"
+        "orgao: Nome do órgão (texto).\n"
+        "chave_politica: Indica se é uma chave política ('S' para Sim, 'N' para Não) (texto)."
+    )
     filename = filedialog.askopenfilename(filetypes=[("CSV files", "*.csv")])
     if filename:
         csv_filepath_entry.delete(0, tk.END)
@@ -189,11 +167,11 @@ def run_script():
         return
     
     # Dados de conexão
-    host = "*"
-    port = '*'
-    database = "*"
-    user = "*"
-    password = "*"
+    host = "10.15.39.218"
+    port = 5432
+    database = "igov"
+    user = "sa_igov"
+    password = "stranger"
 
     # Estabelece a conexão
     connection = connect_to_database(host, port, database, user, password)

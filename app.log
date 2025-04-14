@@ -1,0 +1,254 @@
+2025-04-14 14:27:11,682 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 14:27:11,710 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 14:27:11,710 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 14:27:11,849 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 14:27:11,849 - INFO - 
+Valor de Auth: ab3scndal7b6gr8hsbf1ckb0t5:ec8565a4ad39538e75eeacd82e2044aa
+2025-04-14 14:27:11,850 - WARNING - Tipo desconhecido na linha: {'nome': 'kaue teste', 'login': 'kaue.teste', 'orgao': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 14:27:23,387 - WARNING - Tipo desconhecido na linha: {'nome': 'jose teste', 'login': 'jose.teste', 'orgao': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 14:27:24,011 - WARNING - Tipo desconhecido na linha: {'nome': 'furukawa teste', 'login': 'furukawa.teste', 'orgao': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 14:27:26,308 - INFO - Conexão com o banco de dados fechada.
+2025-04-14 15:30:28,758 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 15:30:28,783 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 15:30:28,784 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 15:30:28,917 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 15:30:28,918 - INFO - 
+Valor de Auth: uah4vqd27qt7nf9ucj7s020q51:118bdeafae5be57f987c79682da6751e
+2025-04-14 15:30:28,918 - WARNING - Tipo desconhecido na linha: {'nome': 'kaue teste', 'login': 'kaue.teste', 'orgao': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 15:30:34,480 - WARNING - Tipo desconhecido na linha: {'nome': 'jose teste', 'login': 'jose.teste', 'orgao': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 15:30:34,785 - WARNING - Tipo desconhecido na linha: {'nome': 'furukawa teste', 'login': 'furukawa.teste', 'orgao': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 15:30:35,140 - INFO - Conexão com o banco de dados fechada.
+2025-04-14 15:31:02,358 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 15:31:02,384 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 15:31:02,384 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 15:31:02,526 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 15:31:02,526 - INFO - 
+Valor de Auth: t6bebv03hr0no6lqrf04i2i5e5:45cb56cdba40303f6ee9567b77822077
+2025-04-14 15:31:02,527 - WARNING - Tipo desconhecido na linha: {'nome': 'kaue teste', 'login': 'kaue.teste', 'orgao': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 15:31:06,576 - WARNING - Tipo desconhecido na linha: {'nome': 'jose teste', 'login': 'jose.teste', 'orgao': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 15:31:12,384 - WARNING - Tipo desconhecido na linha: {'nome': 'furukawa teste', 'login': 'furukawa.teste', 'orgao': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 15:31:12,904 - INFO - Conexão com o banco de dados fechada.
+2025-04-14 15:50:05,159 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 15:50:05,204 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 15:50:05,204 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 15:50:05,328 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 15:50:05,329 - INFO - 
+Valor de Auth: g3puto8olk41mf3r51t5hdbat0:8e1e6a171e0ea0e2e0b9df3de661f5c5
+2025-04-14 15:50:05,329 - WARNING - Tipo desconhecido na linha: {'nome': 'kaue teste', 'login': 'kaue.teste', 'orgao_nome': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 15:50:20,110 - WARNING - Tipo desconhecido na linha: {'nome': 'jose teste', 'login': 'jose.teste', 'orgao_nome': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 15:50:20,549 - WARNING - Tipo desconhecido na linha: {'nome': 'furukawa teste', 'login': 'furukawa.teste', 'orgao_nome': 'SANEPAR', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-14 15:50:21,158 - INFO - Conexão com o banco de dados fechada.
+2025-04-14 15:56:10,804 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 15:56:10,836 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 15:56:10,841 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 15:56:10,965 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 15:56:10,966 - INFO - 
+Valor de Auth: 9rd3h5n7lgkj49h083m37jdp72:f5618288b829241b238a54491963b48f
+2025-04-14 15:56:10,966 - INFO - 
+Tentando criar o usuário: kaue.teste3@nodomain.com...
+2025-04-14 15:56:11,035 - INFO - 
+Usuário kaue.teste3@nodomain.com criado com sucesso com a senha: Ws7IsdEx.
+2025-04-14 15:56:15,022 - INFO - 
+Tentando adicionar o usuário kaue.teste3@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 15:56:15,151 - INFO - Usuário kaue.teste3@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 15:56:16,717 - INFO - 
+Tentando adicionar o usuário kaue.teste3@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 15:56:16,822 - INFO - Usuário kaue.teste3@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 15:56:18,045 - INFO - 
+Tentando criar o usuário: jose.teste3@nodomain.com...
+2025-04-14 15:56:18,113 - INFO - 
+Usuário jose.teste3@nodomain.com criado com sucesso com a senha: caz1dghJ.
+2025-04-14 15:56:19,109 - INFO - 
+Tentando adicionar o usuário jose.teste3@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 15:56:19,212 - INFO - Usuário jose.teste3@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 15:56:20,173 - INFO - 
+Tentando adicionar o usuário jose.teste3@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 15:56:20,295 - INFO - Usuário jose.teste3@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 15:56:21,229 - INFO - 
+Tentando criar o usuário: furukawa.teste3@nodomain.com...
+2025-04-14 15:56:21,300 - INFO - 
+Usuário furukawa.teste3@nodomain.com criado com sucesso com a senha: w4d8XIT4.
+2025-04-14 15:56:22,142 - INFO - 
+Tentando adicionar o usuário furukawa.teste3@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 15:56:22,241 - INFO - Usuário furukawa.teste3@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 15:56:23,044 - INFO - 
+Tentando adicionar o usuário furukawa.teste3@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 15:56:23,194 - INFO - Usuário furukawa.teste3@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 15:56:23,894 - INFO - Conexão com o banco de dados fechada.
+2025-04-14 16:48:59,649 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 16:48:59,671 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 16:48:59,671 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 16:48:59,796 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 16:48:59,797 - INFO - 
+Valor de Auth: k1498pid215obts73fm2k5muv5:253d7d70a61d5e1377fb702281a8a571
+2025-04-14 16:48:59,797 - INFO - 
+Tentando criar o usuário: kaue.teste3@nodomain.com...
+2025-04-14 16:48:59,889 - INFO - 
+Usuário kaue.teste3@nodomain.com criado com sucesso com a senha: U5TBpMLH.
+2025-04-14 16:49:01,465 - INFO - 
+Tentando adicionar o usuário kaue.teste3@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 16:49:01,630 - INFO - Usuário kaue.teste3@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 16:49:01,841 - INFO - 
+Tentando adicionar o usuário kaue.teste3@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 16:49:01,941 - INFO - Usuário kaue.teste3@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 16:49:02,306 - INFO - 
+Tentando criar o usuário: jose.teste3@nodomain.com...
+2025-04-14 16:49:02,379 - INFO - 
+Usuário jose.teste3@nodomain.com criado com sucesso com a senha: QlyjjlaA.
+2025-04-14 16:49:02,753 - INFO - 
+Tentando adicionar o usuário jose.teste3@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 16:49:02,856 - INFO - Usuário jose.teste3@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 16:49:03,185 - INFO - 
+Tentando adicionar o usuário jose.teste3@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 16:49:03,332 - INFO - Usuário jose.teste3@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 16:49:03,705 - INFO - 
+Tentando criar o usuário: furukawa.teste3@nodomain.com...
+2025-04-14 16:49:03,776 - INFO - 
+Usuário furukawa.teste3@nodomain.com criado com sucesso com a senha: YWq4vghr.
+2025-04-14 16:49:04,218 - INFO - 
+Tentando adicionar o usuário furukawa.teste3@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 16:49:04,364 - INFO - Usuário furukawa.teste3@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 16:49:05,033 - INFO - 
+Tentando adicionar o usuário furukawa.teste3@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 16:49:05,138 - INFO - Usuário furukawa.teste3@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 16:49:05,713 - INFO - Conexão com o banco de dados fechada.
+2025-04-14 16:50:33,905 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 16:50:33,925 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 16:50:33,926 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 16:50:34,150 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 16:50:34,151 - INFO - 
+Valor de Auth: tek34m85ge60q1li6h9kdlait2:5280ac83d54b1fda1f825ce2541113c9
+2025-04-14 16:50:34,151 - INFO - 
+Tentando criar o usuário: kaue.teste3@nodomain.com...
+2025-04-14 16:50:34,427 - INFO - 
+Usuário kaue.teste3@nodomain.com criado com sucesso com a senha: dSaZgAkY.
+2025-04-14 16:50:36,834 - INFO - 
+Tentando adicionar o usuário kaue.teste3@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 16:50:36,933 - INFO - Usuário kaue.teste3@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 16:50:37,330 - INFO - 
+Tentando adicionar o usuário kaue.teste3@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 16:50:37,430 - INFO - Usuário kaue.teste3@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 16:50:37,683 - INFO - 
+Tentando criar o usuário: jose.teste3@nodomain.com...
+2025-04-14 16:50:37,762 - INFO - 
+Usuário jose.teste3@nodomain.com criado com sucesso com a senha: 5filGJRO.
+2025-04-14 16:50:37,988 - INFO - 
+Tentando adicionar o usuário jose.teste3@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 16:50:38,122 - INFO - Usuário jose.teste3@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 16:50:38,243 - INFO - 
+Tentando adicionar o usuário jose.teste3@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 16:50:38,347 - INFO - Usuário jose.teste3@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 16:50:38,674 - INFO - 
+Tentando criar o usuário: furukawa.teste3@nodomain.com...
+2025-04-14 16:50:38,746 - INFO - 
+Usuário furukawa.teste3@nodomain.com criado com sucesso com a senha: Z803xjmh.
+2025-04-14 16:50:39,131 - INFO - 
+Tentando adicionar o usuário furukawa.teste3@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 16:50:39,252 - INFO - Usuário furukawa.teste3@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 16:50:39,442 - INFO - 
+Tentando adicionar o usuário furukawa.teste3@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 16:50:39,567 - INFO - Usuário furukawa.teste3@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 16:50:40,106 - INFO - Conexão com o banco de dados fechada.
+2025-04-14 16:52:11,795 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 16:52:11,825 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 16:52:11,825 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 16:52:11,949 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 16:52:11,949 - INFO - 
+Valor de Auth: r1p5chqhsvrrpik6nllt8qr4a6:45638b8aaba76c244929362b3c4fdcd2
+2025-04-14 16:52:11,950 - INFO - 
+Tentando criar o usuário: augusto.teste@nodomain.com...
+2025-04-14 16:52:12,027 - INFO - 
+Usuário augusto.teste@nodomain.com criado com sucesso com a senha: zbPZfKqn.
+2025-04-14 16:52:14,332 - INFO - 
+Tentando adicionar o usuário augusto.teste@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 16:52:14,452 - INFO - Usuário augusto.teste@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 16:52:14,636 - INFO - 
+Tentando adicionar o usuário augusto.teste@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 16:52:14,747 - INFO - Usuário augusto.teste@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 16:52:15,035 - INFO - 
+Tentando criar o usuário: pedro.teste@nodomain.com...
+2025-04-14 16:52:15,113 - INFO - 
+Usuário pedro.teste@nodomain.com criado com sucesso com a senha: v5nAxJ82.
+2025-04-14 16:52:15,365 - INFO - 
+Tentando adicionar o usuário pedro.teste@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 16:52:15,474 - INFO - Usuário pedro.teste@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 16:52:15,770 - INFO - 
+Tentando adicionar o usuário pedro.teste@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 16:52:15,882 - INFO - Usuário pedro.teste@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 16:52:16,139 - INFO - Conexão com o banco de dados fechada.
+2025-04-14 17:09:34,777 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 17:09:34,790 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 17:09:34,790 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 17:09:34,906 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 17:09:34,907 - INFO - 
+Valor de Auth: 4oq0n01li0g8770q4k3jdrula7:baaaf844f7c65d0d39cc2607580817c7
+2025-04-14 17:09:34,907 - INFO - 
+Tentando criar o usuário: augusto.teste@nodomain.com...
+2025-04-14 17:09:34,977 - INFO - 
+Usuário augusto.teste@nodomain.com criado com sucesso com a senha: n8Zt0PyX.
+2025-04-14 17:09:37,164 - INFO - 
+Tentando adicionar o usuário augusto.teste@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 17:09:37,261 - INFO - Usuário augusto.teste@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 17:09:37,909 - INFO - 
+Tentando adicionar o usuário augusto.teste@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 17:09:38,016 - INFO - Usuário augusto.teste@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 17:09:38,433 - INFO - 
+Tentando criar o usuário: pedro.teste@nodomain.com...
+2025-04-14 17:09:38,498 - INFO - 
+Usuário pedro.teste@nodomain.com criado com sucesso com a senha: 3ffw9HUd.
+2025-04-14 17:09:38,970 - INFO - 
+Tentando adicionar o usuário pedro.teste@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 17:09:39,063 - INFO - Usuário pedro.teste@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 17:09:39,514 - INFO - 
+Tentando adicionar o usuário pedro.teste@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 17:09:39,623 - INFO - Usuário pedro.teste@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 17:09:40,146 - INFO - Conexão com o banco de dados fechada.
+2025-04-14 17:17:18,735 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-14 17:17:18,784 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-14 17:17:18,784 - INFO - Cabeçalhos do CSV: ['nome_completo', 'login', 'orgao', 'chave_politica']
+2025-04-14 17:17:18,784 - INFO - Tentando realizar o login na API Expresso com o usuário: expressoadmin-celepar-qliksense
+2025-04-14 17:17:18,784 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-14 17:17:18,908 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-14 17:17:18,909 - INFO - 
+Valor de Auth: kf0j0s3dudqsvujdtu2qdp16m2:5dd3446ccbfdacfe60a77e1cf27a0969
+2025-04-14 17:17:18,909 - INFO - 
+Tentando criar o usuário: augusto.teste@nodomain.com...
+2025-04-14 17:17:18,976 - INFO - 
+Usuário augusto.teste@nodomain.com criado com sucesso com a senha: zhvuxh2G.
+2025-04-14 17:17:20,618 - INFO - 
+Tentando adicionar o usuário augusto.teste@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 17:17:20,730 - INFO - Usuário augusto.teste@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 17:17:21,082 - INFO - 
+Tentando adicionar o usuário augusto.teste@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 17:17:21,194 - INFO - Usuário augusto.teste@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 17:17:21,544 - INFO - 
+Tentando criar o usuário: pedro.teste@nodomain.com...
+2025-04-14 17:17:21,619 - INFO - 
+Usuário pedro.teste@nodomain.com criado com sucesso com a senha: PqW6b25L.
+2025-04-14 17:17:21,985 - INFO - 
+Tentando adicionar o usuário pedro.teste@nodomain.com ao grupo grupo-qliksense-active_directory...
+2025-04-14 17:17:22,091 - INFO - Usuário pedro.teste@nodomain.com adicionado ao grupo grupo-qliksense-active_directory.
+2025-04-14 17:17:22,455 - INFO - 
+Tentando adicionar o usuário pedro.teste@nodomain.com ao grupo grupo-qliksense-default...
+2025-04-14 17:17:22,561 - INFO - Usuário pedro.teste@nodomain.com adicionado ao grupo grupo-qliksense-default.
+2025-04-14 17:17:22,994 - INFO - Conexão com o banco de dados fechada.
