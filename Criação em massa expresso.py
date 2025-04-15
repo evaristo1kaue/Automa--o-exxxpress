@@ -21,8 +21,8 @@ def perform_login():
     payload = {
         "id": 99,  # ID fixo para a requisição de login
         "params": {
-            "user": "expressoadmin-celepar-qliksense",  # Nome de usuário fixo
-            "password": "Adad2066!@seuze2"  # Senha fixa
+            "user": "*",  # Nome de usuário fixo
+            "password": "*"  # Senha fixa
         }
     }
 

@@ -252,3 +252,47 @@ Tentando adicionar o usuário pedro.teste@nodomain.com ao grupo grupo-qliksense-a
 Tentando adicionar o usuário pedro.teste@nodomain.com ao grupo grupo-qliksense-default...
 2025-04-14 17:17:22,561 - INFO - Usuário pedro.teste@nodomain.com adicionado ao grupo grupo-qliksense-default.
 2025-04-14 17:17:22,994 - INFO - Conexão com o banco de dados fechada.
+2025-04-15 12:24:12,985 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-15 12:24:13,060 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-15 12:24:13,061 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-15 12:24:13,225 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-15 12:24:13,226 - INFO - 
+Valor de Auth: 2caer8nt3nlvtckhug5lavlme2:3537248a351d88d1c2f20725b36436bb
+2025-04-15 12:24:13,226 - WARNING - Tipo desconhecido na linha: {'login': 'maria.teste', 'name': 'maria teste da silva'}. Pulando para a próxima linha.
+2025-04-15 12:24:20,009 - WARNING - Tipo desconhecido na linha: {'login': 'simao.teste', 'name': 'simao teste da silva'}. Pulando para a próxima linha.
+2025-04-15 12:24:20,857 - INFO - Conexão com o banco de dados fechada.
+2025-04-15 12:24:24,394 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-15 12:24:24,417 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-15 12:24:24,418 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-15 12:24:24,512 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-15 12:24:24,513 - INFO - 
+Valor de Auth: nd33h8ffunq2dbb8n46lki7v14:004ca5fcd25fc69fb8b493e93e266fc1
+2025-04-15 12:24:24,513 - WARNING - Tipo desconhecido na linha: {'login': 'maria.teste', 'name': 'maria teste da silva'}. Pulando para a próxima linha.
+2025-04-15 12:24:26,171 - WARNING - Tipo desconhecido na linha: {'login': 'simao.teste', 'name': 'simao teste da silva'}. Pulando para a próxima linha.
+2025-04-15 12:24:26,642 - INFO - Conexão com o banco de dados fechada.
+2025-04-15 12:24:46,603 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-15 12:24:46,627 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-15 12:24:46,628 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-15 12:24:46,743 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-15 12:24:46,743 - INFO - 
+Valor de Auth: kau0v9sitndt5l6q4fc5rdgpf4:73119f2b773245c0c6d1d39470b0fc8b
+2025-04-15 12:24:46,743 - WARNING - Tipo desconhecido na linha: {'nome_completo': 'augusto augutinho', 'login': 'augusto.teste', 'orgao': 'COPEL', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-15 12:24:47,770 - WARNING - Tipo desconhecido na linha: {'nome_completo': 'pedro pedrinho', 'login': 'pedro.teste', 'orgao': 'COPEL', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-15 12:24:48,268 - INFO - Conexão com o banco de dados fechada.
+2025-04-15 14:04:01,581 - INFO - Tentando conectar ao banco de dados em 10.15.39.218:5432...
+2025-04-15 14:04:01,725 - INFO - Conexão com o banco de dados estabelecida com sucesso.
+2025-04-15 14:04:01,734 - INFO - 
+Tentando realizar o login na API Expresso...
+2025-04-15 14:04:01,907 - INFO - 
+Resposta da API de Login (JSON):
+2025-04-15 14:04:01,908 - INFO - 
+Valor de Auth: 2csm7l96f6uqi814oallngnam1:88e7fc86623c45a682069bde2c9205f3
+2025-04-15 14:04:01,908 - WARNING - Tipo desconhecido na linha: {'nome_completo': 'augusto augutinho', 'login': 'augusto.teste', 'orgao': 'COPEL', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-15 14:04:03,175 - WARNING - Tipo desconhecido na linha: {'nome_completo': 'pedro pedrinho', 'login': 'pedro.teste', 'orgao': 'COPEL', 'chave_politica': 'N'}. Pulando para a próxima linha.
+2025-04-15 14:04:03,590 - INFO - Conexão com o banco de dados fechada.
