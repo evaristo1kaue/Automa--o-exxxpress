@@ -1,0 +1,97 @@
+2025-04-16 14:48:34,809 - INFO - MainThread - [<module>] - ============================================================
+2025-04-16 14:48:34,809 - INFO - MainThread - [<module>] - Aplicação Combinada (DB Insert & API Create) Iniciada.
+2025-04-16 14:48:34,810 - INFO - MainThread - [<module>] - Log será salvo em: combined_app_log.log
+2025-04-16 14:48:34,810 - INFO - MainThread - [<module>] - ============================================================
+2025-04-16 14:48:34,897 - INFO - MainThread - [setup_gui] - Interface gráfica combinada configurada e pronta.
+2025-04-16 14:49:40,095 - INFO - MainThread - [on_closing] - Janela fechada pelo usuário.
+2025-04-16 14:49:40,129 - INFO - MainThread - [setup_gui] - Aplicação finalizada.
+2025-04-16 14:49:40,129 - INFO - MainThread - [setup_gui] - ============================================================
+
+2025-04-16 14:50:05,771 - INFO - MainThread - [<module>] - ============================================================
+2025-04-16 14:50:05,771 - INFO - MainThread - [<module>] - Aplicação Combinada (DB Insert & API Create) Iniciada.
+2025-04-16 14:50:05,772 - INFO - MainThread - [<module>] - Log será salvo em: combined_app_log.log
+2025-04-16 14:50:05,772 - INFO - MainThread - [<module>] - ============================================================
+2025-04-16 14:50:05,858 - INFO - MainThread - [setup_gui] - Interface gráfica combinada configurada e pronta.
+2025-04-16 14:50:17,968 - INFO - MainThread - [browse_file] - Arquivo CSV selecionado: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins bd ok.csv
+2025-04-16 14:50:19,206 - INFO - DBInsertThread - [run_db_insert_thread_wrapper] - DB Insert Thread: Iniciando para C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins bd ok.csv...
+2025-04-16 14:50:19,206 - INFO - DBInsertThread - [db_connect] - Tentando conectar ao BD: host='10.15.39.218' port='5432' dbname='igov' user='sa_igov' password=***
+2025-04-16 14:50:19,239 - INFO - DBInsertThread - [db_connect] - Conexão BD 'igov' estabelecida.
+2025-04-16 14:50:19,240 - INFO - DBInsertThread - [db_process_csv_and_insert] - DB Insert: Tentando detectar encoding CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins bd ok.csv
+2025-04-16 14:50:19,240 - INFO - DBInsertThread - [db_process_csv_and_insert] - DB Insert: Detectado encoding 'utf-8-sig'.
+2025-04-16 14:50:19,241 - INFO - DBInsertThread - [db_process_csv_and_insert] - DB Insert: Lendo CSV 'teste criacao logins bd ok.csv' (Enc: utf-8-sig).
+2025-04-16 14:50:19,241 - INFO - DBInsertThread - [db_process_csv_and_insert] - DB Insert: Cabeçalhos CSV OK: ['nome', 'orgao', 'chave_politica']
+2025-04-16 14:50:19,241 - INFO - DBInsertThread - [db_process_csv_and_insert] - DB Insert: Inserindo lote final de 2...
+2025-04-16 14:50:19,247 - INFO - DBInsertThread - [db_process_csv_and_insert] - DB Insert: Lote final inserido e commit OK.
+2025-04-16 14:50:19,248 - INFO - DBInsertThread - [db_process_csv_and_insert] - DB Insert: Processamento concluído. Total=2, Sucesso=2, Falhas=0
+2025-04-16 14:50:19,248 - INFO - DBInsertThread - [db_close_connection] - Conexão BD fechada.
+2025-04-16 14:50:19,249 - INFO - DBInsertThread - [run_db_insert_thread_wrapper] - DB Insert Thread: Finalizada.
+2025-04-16 14:52:27,834 - INFO - MainThread - [browse_file] - Arquivo CSV selecionado: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 14:52:29,039 - INFO - APICreateThread - [run_api_creation_thread_wrapper] - API Create Thread: Iniciando para C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv...
+2025-04-16 14:52:29,040 - INFO - APICreateThread - [api_perform_login] - API Login: Tentando login em https://api-slim.expresso.pr.gov.br/celepar/Login...
+2025-04-16 14:52:29,172 - INFO - APICreateThread - [api_perform_login] - API Login: Resposta recebida OK.
+2025-04-16 14:52:29,173 - INFO - APICreateThread - [api_perform_login] - API Login: Sucesso, token extraído.
+2025-04-16 14:52:29,174 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Token API obtido. Processando CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 14:52:29,174 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Detectado encoding 'utf-8-sig'.
+2025-04-16 14:52:29,175 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Lendo CSV 'teste criacao logins expresso ok.csv' (Enc: utf-8-sig).
+2025-04-16 14:52:29,175 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Cabeçalhos CSV OK: ['login', 'name']
+2025-04-16 14:52:29,176 - INFO - APICreateThread - [api_generate_random_password] - Senha gerada OK em 6 tentativa(s).
+2025-04-16 14:52:29,176 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 2 tentando criar user 'marie.curie@nodomain.com' (Name: 'Marie Curie')...
+2025-04-16 14:52:29,177 - INFO - APICreateThread - [api_create_user] - API Create User: Tentando criar usuário marie.curie@nodomain.com em https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser...
+2025-04-16 14:52:29,262 - INFO - APICreateThread - [api_create_user] - API Create User: Resposta recebida OK para marie.curie@nodomain.com.
+2025-04-16 14:52:29,262 - ERROR - APICreateThread - [api_create_users_from_csv] - API Create: Linha 2 falha ao criar user 'marie.curie@nodomain.com'. Detalhe API: A parameter 'accountEmail' is required*
+2025-04-16 14:52:29,263 - INFO - APICreateThread - [api_generate_random_password] - Senha gerada OK em 6 tentativa(s).
+2025-04-16 14:52:29,263 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 3 tentando criar user 'ada.lovelace@nodomain.com' (Name: 'Ada Lovelace')...
+2025-04-16 14:52:29,263 - INFO - APICreateThread - [api_create_user] - API Create User: Tentando criar usuário ada.lovelace@nodomain.com em https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser...
+2025-04-16 14:52:29,365 - INFO - APICreateThread - [api_create_user] - API Create User: Resposta recebida OK para ada.lovelace@nodomain.com.
+2025-04-16 14:52:29,365 - ERROR - APICreateThread - [api_create_users_from_csv] - API Create: Linha 3 falha ao criar user 'ada.lovelace@nodomain.com'. Detalhe API: A parameter 'accountEmail' is required*
+2025-04-16 14:52:29,366 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Processamento CSV concluído. Total=2, Sucesso=0, Falhas=2
+2025-04-16 14:52:29,368 - INFO - APICreateThread - [run_api_creation_thread_wrapper] - API Create Thread: Finalizada.
+2025-04-16 14:54:28,255 - INFO - MainThread - [on_closing] - Janela fechada pelo usuário.
+2025-04-16 14:54:28,286 - INFO - MainThread - [setup_gui] - Aplicação finalizada.
+2025-04-16 14:54:28,287 - INFO - MainThread - [setup_gui] - ============================================================
+
+2025-04-16 14:54:44,764 - INFO - MainThread - [<module>] - ============================================================
+2025-04-16 14:54:44,764 - INFO - MainThread - [<module>] - Aplicação Combinada (DB Insert & API Create) Iniciada.
+2025-04-16 14:54:44,765 - INFO - MainThread - [<module>] - Log será salvo em: combined_app_log.log
+2025-04-16 14:54:44,765 - INFO - MainThread - [<module>] - ============================================================
+2025-04-16 14:54:44,852 - INFO - MainThread - [setup_gui] - Interface gráfica combinada configurada e pronta.
+2025-04-16 14:54:57,675 - INFO - MainThread - [browse_file] - Arquivo CSV selecionado: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 14:54:58,730 - INFO - APICreateThread - [run_api_creation_thread_wrapper] - API Create Thread: Iniciando para C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv...
+2025-04-16 14:54:58,730 - INFO - APICreateThread - [api_perform_login] - API Login: Tentando login em https://api-slim.expresso.pr.gov.br/celepar/Login...
+2025-04-16 14:54:58,876 - INFO - APICreateThread - [api_perform_login] - API Login: Resposta recebida OK.
+2025-04-16 14:54:58,878 - INFO - APICreateThread - [api_perform_login] - API Login: Sucesso, token extraído.
+2025-04-16 14:54:58,879 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Token API obtido. Processando CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 14:54:58,881 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Detectado encoding 'utf-8-sig'.
+2025-04-16 14:54:58,882 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Lendo CSV 'teste criacao logins expresso ok.csv' (Enc: utf-8-sig).
+2025-04-16 14:54:58,883 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Cabeçalhos CSV OK: ['login', 'name']
+2025-04-16 14:54:58,884 - INFO - APICreateThread - [api_generate_random_password] - Senha gerada OK em 1 tentativa(s).
+2025-04-16 14:54:58,885 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 2 tentando criar user 'marie.curie@nodomain.com' (Name: 'Marie Curie')...
+2025-04-16 14:54:58,886 - INFO - APICreateThread - [api_create_user] - API Create User: Tentando criar usuário marie.curie@nodomain.com em https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser...
+2025-04-16 14:54:59,207 - INFO - APICreateThread - [api_create_user] - API Create User: Resposta recebida OK para marie.curie@nodomain.com.
+2025-04-16 14:54:59,208 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 2 user 'marie.curie@nodomain.com' criado OK.
+2025-04-16 14:54:59,209 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 2 adicionando ID 'marie.curie' aos grupos: ['grupo-qliksense-active_directory', 'grupo-qliksense-default']...
+2025-04-16 14:54:59,209 - INFO - APICreateThread - [api_add_user_to_group] - API Add Group: Tentando adicionar ID 'marie.curie' ao grupo 'grupo-qliksense-active_directory' em https://api-slim.expresso.pr.gov.br/celepar/Admin/AddUserToGroup...
+2025-04-16 14:54:59,372 - INFO - APICreateThread - [api_add_user_to_group] - API Add Group: Resposta recebida OK para ID 'marie.curie' -> Grupo 'grupo-qliksense-active_directory'.
+2025-04-16 14:54:59,373 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 2 ID 'marie.curie' adicionado OK ao grupo 'grupo-qliksense-active_directory'.
+2025-04-16 14:54:59,374 - INFO - APICreateThread - [api_add_user_to_group] - API Add Group: Tentando adicionar ID 'marie.curie' ao grupo 'grupo-qliksense-default' em https://api-slim.expresso.pr.gov.br/celepar/Admin/AddUserToGroup...
+2025-04-16 14:54:59,537 - INFO - APICreateThread - [api_add_user_to_group] - API Add Group: Resposta recebida OK para ID 'marie.curie' -> Grupo 'grupo-qliksense-default'.
+2025-04-16 14:54:59,538 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 2 ID 'marie.curie' adicionado OK ao grupo 'grupo-qliksense-default'.
+2025-04-16 14:54:59,538 - INFO - APICreateThread - [api_generate_random_password] - Senha gerada OK em 1 tentativa(s).
+2025-04-16 14:54:59,538 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 3 tentando criar user 'ada.lovelace@nodomain.com' (Name: 'Ada Lovelace')...
+2025-04-16 14:54:59,539 - INFO - APICreateThread - [api_create_user] - API Create User: Tentando criar usuário ada.lovelace@nodomain.com em https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser...
+2025-04-16 14:54:59,874 - INFO - APICreateThread - [api_create_user] - API Create User: Resposta recebida OK para ada.lovelace@nodomain.com.
+2025-04-16 14:54:59,875 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 3 user 'ada.lovelace@nodomain.com' criado OK.
+2025-04-16 14:54:59,876 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 3 adicionando ID 'ada.lovelace' aos grupos: ['grupo-qliksense-active_directory', 'grupo-qliksense-default']...
+2025-04-16 14:54:59,876 - INFO - APICreateThread - [api_add_user_to_group] - API Add Group: Tentando adicionar ID 'ada.lovelace' ao grupo 'grupo-qliksense-active_directory' em https://api-slim.expresso.pr.gov.br/celepar/Admin/AddUserToGroup...
+2025-04-16 14:55:00,010 - INFO - APICreateThread - [api_add_user_to_group] - API Add Group: Resposta recebida OK para ID 'ada.lovelace' -> Grupo 'grupo-qliksense-active_directory'.
+2025-04-16 14:55:00,011 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 3 ID 'ada.lovelace' adicionado OK ao grupo 'grupo-qliksense-active_directory'.
+2025-04-16 14:55:00,012 - INFO - APICreateThread - [api_add_user_to_group] - API Add Group: Tentando adicionar ID 'ada.lovelace' ao grupo 'grupo-qliksense-default' em https://api-slim.expresso.pr.gov.br/celepar/Admin/AddUserToGroup...
+2025-04-16 14:55:00,165 - INFO - APICreateThread - [api_add_user_to_group] - API Add Group: Resposta recebida OK para ID 'ada.lovelace' -> Grupo 'grupo-qliksense-default'.
+2025-04-16 14:55:00,166 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Linha 3 ID 'ada.lovelace' adicionado OK ao grupo 'grupo-qliksense-default'.
+2025-04-16 14:55:00,167 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Processamento CSV concluído. Total=2, Sucesso=2, Falhas=0
+2025-04-16 14:55:00,171 - INFO - APICreateThread - [api_create_users_from_csv] - API Create: Arquivo de credenciais gerado: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar\user_credentials.csv
+2025-04-16 14:55:00,175 - INFO - APICreateThread - [run_api_creation_thread_wrapper] - API Create Thread: Finalizada.
+2025-04-16 14:55:10,747 - INFO - MainThread - [on_closing] - Janela fechada pelo usuário.
+2025-04-16 14:55:10,778 - INFO - MainThread - [setup_gui] - Aplicação finalizada.
+2025-04-16 14:55:10,779 - INFO - MainThread - [setup_gui] - ============================================================
+
