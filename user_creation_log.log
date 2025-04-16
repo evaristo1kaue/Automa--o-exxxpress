@@ -1,0 +1,229 @@
+2025-04-15 15:46:39,703 - INFO - MainThread - Interface gráfica iniciada.
+2025-04-15 15:46:46,326 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 15:46:49,630 - INFO - Thread-1 (run_script_thread_wrapper) - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 15:46:49,630 - INFO - Thread-1 (run_script_thread_wrapper) - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 15:47:06,202 - ERROR - Thread-1 (run_script_thread_wrapper) - Erro durante a requisição de login: 500 Server Error: Internal Server Error for url: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 15:47:06,202 - ERROR - Thread-1 (run_script_thread_wrapper) - Detalhes da resposta de erro: Status=500, Body=
+2025-04-15 15:47:06,202 - ERROR - Thread-1 (run_script_thread_wrapper) - Falha no login inicial da API. O script não pode continuar.
+2025-04-15 15:47:10,222 - INFO - Thread-1 (run_script_thread_wrapper) - Thread de processamento finalizada.
+2025-04-15 15:48:16,890 - INFO - MainThread - Interface gráfica fechada.
+2025-04-15 15:48:29,843 - INFO - MainThread - Interface gráfica iniciada.
+2025-04-15 15:48:39,032 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 15:48:41,120 - INFO - Thread-1 (run_script_thread_wrapper) - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 15:48:41,121 - INFO - Thread-1 (run_script_thread_wrapper) - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 15:48:41,328 - INFO - Thread-1 (run_script_thread_wrapper) - Resposta da API de Login recebida com sucesso.
+2025-04-15 15:48:41,329 - INFO - Thread-1 (run_script_thread_wrapper) - Login bem-sucedido. Token 'auth' extraído.
+2025-04-15 15:48:41,330 - INFO - Thread-1 (run_script_thread_wrapper) - Token de autenticação obtido. Iniciando processamento do CSV.
+2025-04-15 15:48:41,345 - INFO - Thread-1 (run_script_thread_wrapper) - Tentando criar o usuário: maria.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 15:48:41,427 - INFO - Thread-1 (run_script_thread_wrapper) - Resposta da API de criação de usuário recebida para maria.teste@nodomain.com.
+2025-04-15 15:48:41,427 - ERROR - Thread-1 (run_script_thread_wrapper) - Linha 2: API indicou falha ao criar usuário 'maria.teste@nodomain.com'. Resposta: {'id': 64, 'error': {'message': "A parameter 'accountEmail' is required*", 'code': -32605}}
+2025-04-15 15:48:41,428 - INFO - Thread-1 (run_script_thread_wrapper) - Tentando criar o usuário: simao.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 15:48:41,521 - INFO - Thread-1 (run_script_thread_wrapper) - Resposta da API de criação de usuário recebida para simao.teste@nodomain.com.
+2025-04-15 15:48:41,521 - ERROR - Thread-1 (run_script_thread_wrapper) - Linha 3: API indicou falha ao criar usuário 'simao.teste@nodomain.com'. Resposta: {'id': 64, 'error': {'message': "A parameter 'accountEmail' is required*", 'code': -32605}}
+2025-04-15 15:48:41,522 - INFO - Thread-1 (run_script_thread_wrapper) - Processamento do CSV concluído. Total: 2, Sucessos: 0, Falhas/Parciais: 2
+2025-04-15 15:48:59,493 - INFO - Thread-1 (run_script_thread_wrapper) - Thread de processamento finalizada.
+2025-04-15 15:49:28,076 - INFO - MainThread - Interface gráfica fechada.
+2025-04-15 16:14:13,518 - INFO - MainThread - ==================================================
+2025-04-15 16:14:13,518 - INFO - MainThread - Aplicação iniciada.
+2025-04-15 16:14:13,519 - INFO - MainThread - Log será salvo em: user_creation_log.log
+2025-04-15 16:14:13,519 - INFO - MainThread - ==================================================
+2025-04-15 16:14:13,604 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-15 16:14:21,520 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:14:22,947 - INFO - CSVProcessorThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:14:22,948 - INFO - CSVProcessorThread - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 16:14:39,145 - ERROR - CSVProcessorThread - Erro durante a requisição de login (https://api-slim.expresso.pr.gov.br/celepar/Login): 500 Server Error: Internal Server Error for url: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 16:14:39,146 - ERROR - CSVProcessorThread - Detalhes da resposta de erro: Status=500, Body=
+2025-04-15 16:14:39,147 - ERROR - CSVProcessorThread - Falha no login inicial da API. O script não pode continuar.
+2025-04-15 16:14:44,342 - INFO - CSVProcessorThread - Thread de processamento finalizada.
+2025-04-15 16:14:46,141 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-15 16:14:46,172 - INFO - MainThread - Aplicação finalizada.
+2025-04-15 16:14:46,172 - INFO - MainThread - ==================================================
+
+2025-04-15 16:15:30,392 - INFO - MainThread - ==================================================
+2025-04-15 16:15:30,393 - INFO - MainThread - Aplicação iniciada.
+2025-04-15 16:15:30,393 - INFO - MainThread - Log será salvo em: user_creation_log.log
+2025-04-15 16:15:30,393 - INFO - MainThread - ==================================================
+2025-04-15 16:15:30,480 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-15 16:15:38,334 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:15:41,205 - INFO - CSVProcessorThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:15:41,205 - INFO - CSVProcessorThread - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 16:15:41,352 - INFO - CSVProcessorThread - Resposta da API de Login recebida com sucesso.
+2025-04-15 16:15:41,352 - INFO - CSVProcessorThread - Login bem-sucedido. Token 'auth' extraído.
+2025-04-15 16:15:41,353 - INFO - CSVProcessorThread - Token de autenticação obtido. Iniciando processamento do CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:15:41,353 - INFO - CSVProcessorThread - Detectado encoding UTF-8 com BOM para o CSV.
+2025-04-15 16:15:41,354 - INFO - CSVProcessorThread - Cabeçalhos do CSV lidos com sucesso: ['login', 'name']
+2025-04-15 16:15:41,354 - INFO - CSVProcessorThread - Linha 2: Tentando criar usuário com email 'maria.teste@nodomain.com'...
+2025-04-15 16:15:41,355 - INFO - CSVProcessorThread - Tentando criar o usuário: maria.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:15:41,453 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para maria.teste@nodomain.com.
+2025-04-15 16:15:41,454 - ERROR - CSVProcessorThread - Linha 2: API indicou falha ao criar usuário com email 'maria.teste@nodomain.com'. Resposta: {'id': 64, 'error': {'message': "A parameter 'accountEmail' is required*", 'code': -32605}}
+2025-04-15 16:15:41,454 - INFO - CSVProcessorThread - Linha 3: Tentando criar usuário com email 'simao.teste@nodomain.com'...
+2025-04-15 16:15:41,454 - INFO - CSVProcessorThread - Tentando criar o usuário: simao.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:15:41,544 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para simao.teste@nodomain.com.
+2025-04-15 16:15:41,544 - ERROR - CSVProcessorThread - Linha 3: API indicou falha ao criar usuário com email 'simao.teste@nodomain.com'. Resposta: {'id': 64, 'error': {'message': "A parameter 'accountEmail' is required*", 'code': -32605}}
+2025-04-15 16:15:41,545 - INFO - CSVProcessorThread - Processamento do CSV concluído. Total de linhas lidas: 2, Sucessos: 0, Falhas/Parciais: 2
+2025-04-15 16:15:48,550 - INFO - CSVProcessorThread - Thread de processamento finalizada.
+2025-04-15 16:42:49,677 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-15 16:42:49,705 - INFO - MainThread - Aplicação finalizada.
+2025-04-15 16:42:49,706 - INFO - MainThread - ==================================================
+
+2025-04-15 16:42:50,916 - INFO - MainThread - ==================================================
+2025-04-15 16:42:50,916 - INFO - MainThread - Aplicação iniciada.
+2025-04-15 16:42:50,917 - INFO - MainThread - Log será salvo em: user_creation_log.log
+2025-04-15 16:42:50,917 - INFO - MainThread - ==================================================
+2025-04-15 16:42:51,000 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-15 16:42:58,399 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:42:59,918 - INFO - CSVProcessorThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:42:59,919 - INFO - CSVProcessorThread - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 16:43:00,078 - INFO - CSVProcessorThread - Resposta da API de Login recebida com sucesso.
+2025-04-15 16:43:00,078 - INFO - CSVProcessorThread - Login bem-sucedido. Token 'auth' extraído.
+2025-04-15 16:43:00,079 - INFO - CSVProcessorThread - Token de autenticação obtido. Iniciando processamento do CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:43:00,079 - INFO - CSVProcessorThread - Detectado encoding UTF-8 com BOM para o CSV.
+2025-04-15 16:43:00,080 - INFO - CSVProcessorThread - Cabeçalhos do CSV lidos com sucesso: ['login', 'name']
+2025-04-15 16:43:00,080 - INFO - CSVProcessorThread - Linha 2: Tentando criar usuário com email 'maria.teste@nodomain.com'...
+2025-04-15 16:43:00,080 - INFO - CSVProcessorThread - Tentando criar o usuário: maria.teste via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:43:00,186 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para maria.teste.
+2025-04-15 16:43:00,186 - ERROR - CSVProcessorThread - Linha 2: API indicou falha ao criar usuário com email 'maria.teste@nodomain.com'. Resposta: {'id': 64, 'error': {'message': "A parameter 'accountEmail' is required*", 'code': -32605}}
+2025-04-15 16:43:00,187 - INFO - CSVProcessorThread - Linha 3: Tentando criar usuário com email 'simao.teste@nodomain.com'...
+2025-04-15 16:43:00,187 - INFO - CSVProcessorThread - Tentando criar o usuário: simao.teste via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:43:00,258 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para simao.teste.
+2025-04-15 16:43:00,258 - ERROR - CSVProcessorThread - Linha 3: API indicou falha ao criar usuário com email 'simao.teste@nodomain.com'. Resposta: {'id': 64, 'error': {'message': "A parameter 'accountEmail' is required*", 'code': -32605}}
+2025-04-15 16:43:00,259 - INFO - CSVProcessorThread - Processamento do CSV concluído. Total de linhas lidas: 2, Sucessos: 0, Falhas/Parciais: 2
+2025-04-15 16:43:02,917 - INFO - CSVProcessorThread - Thread de processamento finalizada.
+2025-04-15 16:45:28,930 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-15 16:45:28,951 - INFO - MainThread - Aplicação finalizada.
+2025-04-15 16:45:28,952 - INFO - MainThread - ==================================================
+
+2025-04-15 16:46:04,688 - INFO - MainThread - ==================================================
+2025-04-15 16:46:04,689 - INFO - MainThread - Aplicação iniciada.
+2025-04-15 16:46:04,689 - INFO - MainThread - Log será salvo em: user_creation_log.log
+2025-04-15 16:46:04,690 - INFO - MainThread - ==================================================
+2025-04-15 16:46:04,786 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-15 16:46:10,106 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:46:11,002 - INFO - CSVProcessorThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:46:11,002 - INFO - CSVProcessorThread - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 16:46:11,149 - INFO - CSVProcessorThread - Resposta da API de Login recebida com sucesso.
+2025-04-15 16:46:11,150 - INFO - CSVProcessorThread - Login bem-sucedido. Token 'auth' extraído.
+2025-04-15 16:46:11,151 - INFO - CSVProcessorThread - Token de autenticação obtido. Iniciando processamento do CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:46:11,152 - INFO - CSVProcessorThread - Detectado encoding UTF-8 com BOM para o CSV.
+2025-04-15 16:46:11,154 - INFO - CSVProcessorThread - Cabeçalhos do CSV lidos com sucesso: ['login', 'name']
+2025-04-15 16:46:11,155 - INFO - CSVProcessorThread - Linha 2: Tentando criar usuário com email 'maria.teste@nodomain.com'...
+2025-04-15 16:46:11,155 - INFO - CSVProcessorThread - Tentando criar o usuário: maria.teste via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:46:11,693 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para maria.teste.
+2025-04-15 16:46:11,694 - INFO - CSVProcessorThread - Linha 2: Usuário com email 'maria.teste@nodomain.com' criado com sucesso.
+2025-04-15 16:46:11,695 - INFO - CSVProcessorThread - Linha 2: Tentando adicionar login original 'maria.teste' aos grupos: ['grupo-qliksense-active_directory', 'grupo-qliksense-default']
+2025-04-15 16:46:11,695 - INFO - CSVProcessorThread - Tentando adicionar o ID/Login 'maria.teste' ao grupo 'grupo-qliksense-active_directory' via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/AddUserToGroup
+2025-04-15 16:46:11,820 - INFO - CSVProcessorThread - Resposta da API de adicionar ao grupo recebida para ID/Login 'maria.teste' e grupo 'grupo-qliksense-active_directory'.
+2025-04-15 16:46:11,821 - INFO - CSVProcessorThread - Linha 2: Login original 'maria.teste' adicionado com sucesso ao grupo 'grupo-qliksense-active_directory'.
+2025-04-15 16:46:11,821 - INFO - CSVProcessorThread - Tentando adicionar o ID/Login 'maria.teste' ao grupo 'grupo-qliksense-default' via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/AddUserToGroup
+2025-04-15 16:46:12,012 - INFO - CSVProcessorThread - Resposta da API de adicionar ao grupo recebida para ID/Login 'maria.teste' e grupo 'grupo-qliksense-default'.
+2025-04-15 16:46:12,012 - INFO - CSVProcessorThread - Linha 2: Login original 'maria.teste' adicionado com sucesso ao grupo 'grupo-qliksense-default'.
+2025-04-15 16:46:12,013 - INFO - CSVProcessorThread - Linha 3: Tentando criar usuário com email 'simao.teste@nodomain.com'...
+2025-04-15 16:46:12,013 - INFO - CSVProcessorThread - Tentando criar o usuário: simao.teste via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:46:12,116 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para simao.teste.
+2025-04-15 16:46:12,116 - ERROR - CSVProcessorThread - Linha 3: API indicou falha ao criar usuário com email 'simao.teste@nodomain.com'. Resposta: {'id': 64, 'error': {'message': 'must have 2 numbers in the password', 'code': 1037}}
+2025-04-15 16:46:12,117 - INFO - CSVProcessorThread - Processamento do CSV concluído. Total de linhas lidas: 2, Sucessos: 1, Falhas/Parciais: 1
+2025-04-15 16:46:12,118 - INFO - CSVProcessorThread - Arquivo CSV com credenciais (email completo e senha) gerado em: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar\user_credentials.csv
+2025-04-15 16:46:23,058 - INFO - CSVProcessorThread - Thread de processamento finalizada.
+2025-04-15 16:50:32,585 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-15 16:50:32,619 - INFO - MainThread - Aplicação finalizada.
+2025-04-15 16:50:32,620 - INFO - MainThread - ==================================================
+
+2025-04-15 16:50:37,854 - INFO - MainThread - ==================================================
+2025-04-15 16:50:37,854 - INFO - MainThread - Aplicação iniciada.
+2025-04-15 16:50:37,855 - INFO - MainThread - Log será salvo em: user_creation_log.log
+2025-04-15 16:50:37,855 - INFO - MainThread - ==================================================
+2025-04-15 16:50:37,938 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-15 16:50:42,784 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:50:43,688 - INFO - CSVProcessorThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:50:43,688 - INFO - CSVProcessorThread - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 16:50:51,057 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-15 16:50:51,088 - INFO - MainThread - Aplicação finalizada.
+2025-04-15 16:50:51,089 - INFO - MainThread - ==================================================
+
+2025-04-15 16:51:41,860 - INFO - MainThread - ==================================================
+2025-04-15 16:51:41,860 - INFO - MainThread - Aplicação iniciada.
+2025-04-15 16:51:41,860 - INFO - MainThread - Log será salvo em: user_creation_log.log
+2025-04-15 16:51:41,861 - INFO - MainThread - ==================================================
+2025-04-15 16:51:41,950 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-15 16:51:47,675 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:51:50,241 - INFO - CSVProcessorThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:51:50,241 - INFO - CSVProcessorThread - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 16:51:50,378 - INFO - CSVProcessorThread - Resposta da API de Login recebida com sucesso.
+2025-04-15 16:51:50,379 - INFO - CSVProcessorThread - Login bem-sucedido. Token 'auth' extraído.
+2025-04-15 16:51:50,379 - INFO - CSVProcessorThread - Token de autenticação obtido. Iniciando processamento do CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:51:50,380 - INFO - CSVProcessorThread - Detectado encoding 'utf-8-sig' para o CSV.
+2025-04-15 16:51:50,381 - INFO - CSVProcessorThread - Cabeçalhos do CSV lidos com sucesso: ['login', 'name'] (Encoding: utf-8-sig)
+2025-04-15 16:51:50,382 - INFO - CSVProcessorThread - Senha gerada com sucesso em 1 tentativa(s) (12 caracteres, 2 dígitos).
+2025-04-15 16:51:50,382 - INFO - CSVProcessorThread - Linha 2: Tentando criar usuário com email 'maria.teste@nodomain.com'...
+2025-04-15 16:51:50,383 - INFO - CSVProcessorThread - Tentando criar o usuário com email: maria.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:51:50,493 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para maria.teste@nodomain.com.
+2025-04-15 16:51:50,493 - ERROR - CSVProcessorThread - Linha 2: API indicou falha ao criar usuário com email 'maria.teste@nodomain.com'. Detalhe: A parameter 'accountLogin' is required*
+2025-04-15 16:51:50,494 - INFO - CSVProcessorThread - Senha gerada com sucesso em 1 tentativa(s) (12 caracteres, 2 dígitos).
+2025-04-15 16:51:50,494 - INFO - CSVProcessorThread - Linha 3: Tentando criar usuário com email 'simao.teste@nodomain.com'...
+2025-04-15 16:51:50,495 - INFO - CSVProcessorThread - Tentando criar o usuário com email: simao.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:51:50,562 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para simao.teste@nodomain.com.
+2025-04-15 16:51:50,562 - ERROR - CSVProcessorThread - Linha 3: API indicou falha ao criar usuário com email 'simao.teste@nodomain.com'. Detalhe: A parameter 'accountLogin' is required*
+2025-04-15 16:51:50,563 - INFO - CSVProcessorThread - Processamento do CSV concluído. Total de linhas lidas: 2, Sucessos: 0, Falhas/Parciais: 2
+2025-04-15 16:51:54,194 - INFO - CSVProcessorThread - Thread de processamento finalizada.
+2025-04-15 16:54:30,266 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-15 16:54:30,291 - INFO - MainThread - Aplicação finalizada.
+2025-04-15 16:54:30,291 - INFO - MainThread - ==================================================
+
+2025-04-15 16:54:32,931 - INFO - MainThread - ==================================================
+2025-04-15 16:54:32,932 - INFO - MainThread - Aplicação iniciada.
+2025-04-15 16:54:32,932 - INFO - MainThread - Log será salvo em: user_creation_log.log
+2025-04-15 16:54:32,932 - INFO - MainThread - ==================================================
+2025-04-15 16:54:33,015 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-15 16:54:38,506 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:54:39,476 - INFO - CSVProcessorThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:54:39,476 - INFO - CSVProcessorThread - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-15 16:54:39,635 - INFO - CSVProcessorThread - Resposta da API de Login recebida com sucesso.
+2025-04-15 16:54:39,635 - INFO - CSVProcessorThread - Login bem-sucedido. Token 'auth' extraído.
+2025-04-15 16:54:39,636 - INFO - CSVProcessorThread - Token de autenticação obtido. Iniciando processamento do CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-15 16:54:39,637 - INFO - CSVProcessorThread - Detectado encoding 'utf-8-sig' para o CSV.
+2025-04-15 16:54:39,638 - INFO - CSVProcessorThread - Cabeçalhos do CSV lidos com sucesso: ['login', 'name'] (Encoding: utf-8-sig)
+2025-04-15 16:54:39,639 - INFO - CSVProcessorThread - Senha gerada com sucesso em 2 tentativa(s) (12 caracteres, 2 dígitos).
+2025-04-15 16:54:39,639 - INFO - CSVProcessorThread - Linha 2: Tentando criar usuário com email 'maria.teste@nodomain.com'...
+2025-04-15 16:54:39,640 - INFO - CSVProcessorThread - Tentando criar o usuário com email: maria.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:54:39,726 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para maria.teste@nodomain.com.
+2025-04-15 16:54:39,727 - ERROR - CSVProcessorThread - Linha 2: API indicou falha ao criar usuário com email 'maria.teste@nodomain.com'. Detalhe: A parameter 'accountName' is required*
+2025-04-15 16:54:39,727 - INFO - CSVProcessorThread - Senha gerada com sucesso em 1 tentativa(s) (12 caracteres, 4 dígitos).
+2025-04-15 16:54:39,728 - INFO - CSVProcessorThread - Linha 3: Tentando criar usuário com email 'simao.teste@nodomain.com'...
+2025-04-15 16:54:39,728 - INFO - CSVProcessorThread - Tentando criar o usuário com email: simao.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-15 16:54:39,822 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para simao.teste@nodomain.com.
+2025-04-15 16:54:39,823 - ERROR - CSVProcessorThread - Linha 3: API indicou falha ao criar usuário com email 'simao.teste@nodomain.com'. Detalhe: A parameter 'accountName' is required*
+2025-04-15 16:54:39,824 - INFO - CSVProcessorThread - Processamento do CSV concluído. Total de linhas lidas: 2, Sucessos: 0, Falhas/Parciais: 2
+2025-04-15 16:54:47,645 - INFO - CSVProcessorThread - Thread de processamento finalizada.
+2025-04-16 13:48:15,368 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-16 13:48:15,400 - INFO - MainThread - Aplicação finalizada.
+2025-04-16 13:48:15,400 - INFO - MainThread - ==================================================
+
+2025-04-16 13:51:04,314 - INFO - MainThread - ==================================================
+2025-04-16 13:51:04,314 - INFO - MainThread - Aplicação iniciada.
+2025-04-16 13:51:04,314 - INFO - MainThread - Log será salvo em: user_creation_log.log
+2025-04-16 13:51:04,315 - INFO - MainThread - ==================================================
+2025-04-16 13:51:04,419 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-16 13:51:11,024 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 13:51:12,946 - INFO - CSVProcessorThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 13:51:12,946 - INFO - CSVProcessorThread - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-16 13:51:13,087 - INFO - CSVProcessorThread - Resposta da API de Login recebida com sucesso.
+2025-04-16 13:51:13,088 - INFO - CSVProcessorThread - Login bem-sucedido. Token 'auth' extraído.
+2025-04-16 13:51:13,088 - INFO - CSVProcessorThread - Token de autenticação obtido. Iniciando processamento do CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 13:51:13,090 - INFO - CSVProcessorThread - Detectado encoding 'utf-8-sig' para o CSV.
+2025-04-16 13:51:13,090 - INFO - CSVProcessorThread - Cabeçalhos do CSV lidos com sucesso: ['login', 'name'] (Encoding: utf-8-sig)
+2025-04-16 13:51:13,090 - INFO - CSVProcessorThread - Senha gerada com sucesso em 2 tentativa(s) (12 caracteres, 3 dígitos).
+2025-04-16 13:51:13,091 - INFO - CSVProcessorThread - Linha 2: Tentando criar usuário com email 'maria.teste@nodomain.com'...
+2025-04-16 13:51:13,091 - INFO - CSVProcessorThread - Tentando criar o usuário com email: maria.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-16 13:51:13,196 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para maria.teste@nodomain.com.
+2025-04-16 13:51:13,197 - ERROR - CSVProcessorThread - Linha 2: API indicou falha ao criar usuário com email 'maria.teste@nodomain.com'. Detalhe: A parameter 'accountName' is required*
+2025-04-16 13:51:13,198 - INFO - CSVProcessorThread - Senha gerada com sucesso em 2 tentativa(s) (12 caracteres, 2 dígitos).
+2025-04-16 13:51:13,199 - INFO - CSVProcessorThread - Linha 3: Tentando criar usuário com email 'simao.teste@nodomain.com'...
+2025-04-16 13:51:13,199 - INFO - CSVProcessorThread - Tentando criar o usuário com email: simao.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-16 13:51:13,296 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para simao.teste@nodomain.com.
+2025-04-16 13:51:13,296 - ERROR - CSVProcessorThread - Linha 3: API indicou falha ao criar usuário com email 'simao.teste@nodomain.com'. Detalhe: A parameter 'accountName' is required*
+2025-04-16 13:51:13,297 - INFO - CSVProcessorThread - Processamento do CSV concluído. Total de linhas lidas: 2, Sucessos: 0, Falhas/Parciais: 2
+2025-04-16 13:51:17,891 - INFO - CSVProcessorThread - Thread de processamento finalizada.
+2025-04-16 13:54:23,555 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-16 13:54:23,580 - INFO - MainThread - Aplicação finalizada.
+2025-04-16 13:54:23,580 - INFO - MainThread - ==================================================
+
