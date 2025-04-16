@@ -1,0 +1,34 @@
+2025-04-16 14:37:17,171 - INFO - MainThread - ==================================================
+2025-04-16 14:37:17,171 - INFO - MainThread - Aplicação de Inserção de Chaves iniciada.
+2025-04-16 14:37:17,172 - INFO - MainThread - Log será salvo em: db_insert_log.log
+2025-04-16 14:37:17,172 - INFO - MainThread - Tamanho do lote de inserção: 100
+2025-04-16 14:37:17,173 - INFO - MainThread - ==================================================
+2025-04-16 14:37:17,256 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-16 14:37:19,972 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-16 14:37:20,003 - INFO - MainThread - Aplicação finalizada.
+2025-04-16 14:37:20,004 - INFO - MainThread - ==================================================
+
+2025-04-16 14:38:47,106 - INFO - MainThread - ==================================================
+2025-04-16 14:38:47,107 - INFO - MainThread - Aplicação de Inserção de Chaves iniciada.
+2025-04-16 14:38:47,107 - INFO - MainThread - Log será salvo em: db_insert_log.log
+2025-04-16 14:38:47,107 - INFO - MainThread - Tamanho do lote de inserção: 100
+2025-04-16 14:38:47,108 - INFO - MainThread - ==================================================
+2025-04-16 14:38:47,187 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-16 14:38:57,004 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins bd ok.csv
+2025-04-16 14:38:59,532 - INFO - CSVInsertThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins bd ok.csv
+2025-04-16 14:38:59,532 - INFO - CSVInsertThread - Tentando conectar ao banco de dados: host='10.15.39.218' port='5432' dbname='igov' user='sa_igov' password=***
+2025-04-16 14:38:59,566 - INFO - CSVInsertThread - Conexão com o banco de dados 'igov' estabelecida com sucesso.
+2025-04-16 14:38:59,566 - INFO - CSVInsertThread - Tentando detectar encoding do arquivo CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins bd ok.csv
+2025-04-16 14:38:59,567 - INFO - CSVInsertThread - Detectado encoding 'utf-8-sig' para o CSV.
+2025-04-16 14:38:59,568 - INFO - CSVInsertThread - Iniciando leitura do CSV 'teste criacao logins bd ok.csv' com encoding 'utf-8-sig'.
+2025-04-16 14:38:59,568 - INFO - CSVInsertThread - Cabeçalhos do CSV validados: ['nome', 'orgao', 'chave_politica']
+2025-04-16 14:38:59,569 - INFO - CSVInsertThread - Inserindo lote final com 2 registro(s)...
+2025-04-16 14:38:59,581 - INFO - CSVInsertThread - Lote final de 2 registros inserido e commit realizado com sucesso.
+2025-04-16 14:38:59,581 - INFO - CSVInsertThread - Processamento concluído. Total: 2, Sucessos: 2, Falhas: 0
+2025-04-16 14:38:59,582 - INFO - CSVInsertThread - Processamento principal concluído na thread.
+2025-04-16 14:38:59,583 - INFO - CSVInsertThread - Conexão com o banco de dados fechada.
+2025-04-16 14:38:59,584 - INFO - CSVInsertThread - Thread de processamento finalizada.
+2025-04-16 14:39:22,615 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-16 14:39:22,652 - INFO - MainThread - Aplicação finalizada.
+2025-04-16 14:39:22,653 - INFO - MainThread - ==================================================
+

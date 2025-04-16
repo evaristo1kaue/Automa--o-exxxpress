@@ -227,3 +227,42 @@
 2025-04-16 13:54:23,580 - INFO - MainThread - Aplicação finalizada.
 2025-04-16 13:54:23,580 - INFO - MainThread - ==================================================
 
+2025-04-16 13:54:24,782 - INFO - MainThread - ==================================================
+2025-04-16 13:54:24,782 - INFO - MainThread - Aplicação iniciada.
+2025-04-16 13:54:24,783 - INFO - MainThread - Log será salvo em: user_creation_log.log
+2025-04-16 13:54:24,783 - INFO - MainThread - ==================================================
+2025-04-16 13:54:24,867 - INFO - MainThread - Interface gráfica configurada e pronta.
+2025-04-16 13:54:29,683 - INFO - MainThread - Arquivo CSV selecionado pelo usuário: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 13:54:31,549 - INFO - CSVProcessorThread - Iniciando processo em background para o arquivo: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 13:54:31,549 - INFO - CSVProcessorThread - Tentando realizar o login na API: https://api-slim.expresso.pr.gov.br/celepar/Login
+2025-04-16 13:54:31,719 - INFO - CSVProcessorThread - Resposta da API de Login recebida com sucesso.
+2025-04-16 13:54:31,719 - INFO - CSVProcessorThread - Login bem-sucedido. Token 'auth' extraído.
+2025-04-16 13:54:31,719 - INFO - CSVProcessorThread - Token de autenticação obtido. Iniciando processamento do CSV: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar/teste criacao logins expresso ok.csv
+2025-04-16 13:54:31,720 - INFO - CSVProcessorThread - Detectado encoding 'utf-8-sig' para o CSV.
+2025-04-16 13:54:31,720 - INFO - CSVProcessorThread - Cabeçalhos do CSV lidos com sucesso: ['login', 'name'] (Encoding: utf-8-sig)
+2025-04-16 13:54:31,721 - INFO - CSVProcessorThread - Senha gerada com sucesso em 3 tentativa(s) (12 caracteres, 2 dígitos).
+2025-04-16 13:54:31,721 - INFO - CSVProcessorThread - Linha 2: Tentando criar usuário com email 'maria.teste@nodomain.com'...
+2025-04-16 13:54:31,721 - INFO - CSVProcessorThread - Tentando criar o usuário com email: maria.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-16 13:54:31,879 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para maria.teste@nodomain.com.
+2025-04-16 13:54:31,879 - ERROR - CSVProcessorThread - Linha 2: API indicou falha ao criar usuário com email 'maria.teste@nodomain.com'. Detalhe: Este login já está sendo usado por:
+maria teste da silva - maria.teste@nodomain.com
+
+2025-04-16 13:54:31,880 - INFO - CSVProcessorThread - Senha gerada com sucesso em 2 tentativa(s) (12 caracteres, 2 dígitos).
+2025-04-16 13:54:31,881 - INFO - CSVProcessorThread - Linha 3: Tentando criar usuário com email 'simao.teste@nodomain.com'...
+2025-04-16 13:54:31,881 - INFO - CSVProcessorThread - Tentando criar o usuário com email: simao.teste@nodomain.com via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/CreateUser
+2025-04-16 13:54:32,392 - INFO - CSVProcessorThread - Resposta da API de criação de usuário recebida para simao.teste@nodomain.com.
+2025-04-16 13:54:32,393 - INFO - CSVProcessorThread - Linha 3: Usuário com email 'simao.teste@nodomain.com' criado com sucesso.
+2025-04-16 13:54:32,394 - INFO - CSVProcessorThread - Linha 3: Tentando adicionar login original 'simao.teste' aos grupos: ['grupo-qliksense-active_directory', 'grupo-qliksense-default']
+2025-04-16 13:54:32,395 - INFO - CSVProcessorThread - Tentando adicionar o ID/Login 'simao.teste' ao grupo 'grupo-qliksense-active_directory' via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/AddUserToGroup
+2025-04-16 13:54:32,543 - INFO - CSVProcessorThread - Resposta da API de adicionar ao grupo recebida para ID/Login 'simao.teste' e grupo 'grupo-qliksense-active_directory'.
+2025-04-16 13:54:32,544 - INFO - CSVProcessorThread - Linha 3: Login original 'simao.teste' adicionado com sucesso ao grupo 'grupo-qliksense-active_directory'.
+2025-04-16 13:54:32,544 - INFO - CSVProcessorThread - Tentando adicionar o ID/Login 'simao.teste' ao grupo 'grupo-qliksense-default' via API: https://api-slim.expresso.pr.gov.br/celepar/Admin/AddUserToGroup
+2025-04-16 13:54:32,734 - INFO - CSVProcessorThread - Resposta da API de adicionar ao grupo recebida para ID/Login 'simao.teste' e grupo 'grupo-qliksense-default'.
+2025-04-16 13:54:32,736 - INFO - CSVProcessorThread - Linha 3: Login original 'simao.teste' adicionado com sucesso ao grupo 'grupo-qliksense-default'.
+2025-04-16 13:54:32,737 - INFO - CSVProcessorThread - Processamento do CSV concluído. Total de linhas lidas: 2, Sucessos: 1, Falhas/Parciais: 1
+2025-04-16 13:54:32,741 - INFO - CSVProcessorThread - Arquivo CSV com credenciais (email completo e senha) gerado em: C:/Users/est.kaue.evaristo/Desktop/Automação Celepar\user_credentials.csv
+2025-04-16 13:54:38,696 - INFO - CSVProcessorThread - Thread de processamento finalizada.
+2025-04-16 13:57:31,861 - INFO - MainThread - Janela fechada pelo usuário.
+2025-04-16 13:57:31,892 - INFO - MainThread - Aplicação finalizada.
+2025-04-16 13:57:31,892 - INFO - MainThread - ==================================================
+
